@@ -8,4 +8,8 @@ public class Dummy {
     public static boolean notQuite(boolean value) {
         return value;
     }
+
+    public static void throwsAnException() {
+        throw new RuntimeException();
+    }
 }

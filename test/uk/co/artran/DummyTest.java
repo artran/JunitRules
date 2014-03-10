@@ -3,6 +3,8 @@ package uk.co.artran;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
+import uk.co.artran.rules.wip.WorkInProgress;
+import uk.co.artran.rules.wip.WorkInProgressRule;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 import static uk.co.artran.Dummy.not;

@@ -1,4 +1,4 @@
-package uk.co.artran;
+package uk.co.artran.rules.wip;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
@@ -30,5 +30,4 @@ public class WorkInProgressRule implements TestRule {
     private boolean testIsWorkInProgress(Description description) {
         return description.getAnnotation(WorkInProgress.class) != null;
     }
-
 }

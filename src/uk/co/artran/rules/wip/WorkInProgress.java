@@ -1,4 +1,4 @@
-package uk.co.artran;
+package uk.co.artran.rules.wip;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
