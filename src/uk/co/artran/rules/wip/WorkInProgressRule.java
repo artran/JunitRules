@@ -16,6 +16,10 @@ public class WorkInProgressRule implements TestRule {
                     try {
                         base.evaluate();
                     } catch (Throwable e) {
+                        if (System.getProperty("showWIP", null) != null)
+                        {
+                            System.err.println(String.format("Ignoring a test due to 'Work In Progress' (%s): %s", reason, description.getDisplayName()));
+                        }
                         return; // We EXPECT to see an AssertionException in WIP tests
                     }
 
